@@ -1,0 +1,36 @@
+[%#
+# -*- Mode: perl; indent-tabs-mode: nil -*-
+#
+# The contents of this file are subject to the Mozilla Public
+# License Version 1.1 (the "License"); you may not use this file
+# except in compliance with the License. You may obtain a copy of
+# the License at http://www.mozilla.org/MPL/
+#
+# Software distributed under the License is distributed on an "AS
+# IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
+# implied. See the License for the specific language governing
+# rights and limitations under the License.
+#
+# The Original Code is the BitCoin Bugzilla Extension.
+#
+# The Initial Developer of the Original Code is Mark Bryars
+# Portions created by the Initial Developer are Copyright (C) 2010 the
+# Initial Developer. All Rights Reserved.
+#
+# Contributor(s):
+#   Mark Bryars <bugzilla@darkskiez.co.uk>
+%]
+[%
+    title = "BitCoin Extension"
+    desc = "Configure BitCoin Extension"
+%]
+
+[% param_descs = {
+  bitcoinsiteaddress => "Project BitCoin Address",
+  bitcoinhostaddress => "BitCoin Server ip:port (eg localhost:8332)",
+  bitcoinrpcusername => "BitCoin Server Username (Currently Unsupported - please unset in client)",
+  bitcoinrpcpassword => "BitCoin Server Password (rpcpassword in bitcoin config)",
+  bitcoinpercentproject => "Percentage to transfer to the project site address for each bug (remainder to developer)",
+  bitcoinpercentdonate => "Percentage to donate to the bitcoin plugin author"
+}
+%]

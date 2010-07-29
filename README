@@ -1,0 +1,39 @@
+BitCoin Extension for Bugzilla
+------------------------------
+
+
+DISCLAIMER: This could eat all of your bugs, bitcoins, trash your wallet, etc, 
+You take full responsibility for this when using this product.
+
+Assigns Every bug a BitCoin Address / Shows Coins Donated for each bug
+
+
+MINIMUM REQUIREMENTS
+--------------------
+
+Bugzilla: 3.6.1 
+Bitcoin: 3.3 
+Perl Modules: JSON::RPC::Client 
+(apt-get install libjson-rpc-perl)
+
+
+
+
+
+INSTALL
+-------
+
+BACKUP Your bugzilla database, .bitcoin folder before starting!
+
+1. Install BitCoin(d) in Server Mode on a machine the bugzilla installation has access to, set a password for it
+
+2. Place folder in your bugzilla 3.6.1+ extensions dir
+
+3. Login as Administrator to Bugzilla -> Administration -> BitCoin Extension -> Configure as Required
+
+6. Validate Communication - http://server/bugzilla/page.cgi?id=bitcoin.html
+
+5. Run Sanity Check
+
+6. Profit!
+
